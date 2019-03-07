@@ -1,7 +1,7 @@
 # Watch together
 > No login. No tracking. Just watch videos together.
 
-Currently supports YouTube playback.
+Currently supports YouTube playback. Still under works.
 ## Installing and Building
 Project uses cocoapods to manage dependencies.
 - Run pod install 
