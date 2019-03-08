@@ -18,6 +18,7 @@
 		A5374A7F21F0E96C00E666D4 /* WatchTogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A7E21F0E96C00E666D4 /* WatchTogetherUITests.swift */; };
 		A5374A9021F10A3900E666D4 /* WTYTPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A8F21F10A3900E666D4 /* WTYTPlayerView.swift */; };
 		A5374A9221F10CFE00E666D4 /* UIViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A9121F10CFE00E666D4 /* UIViewUtils.swift */; };
+		A5DFF9B9221FF73900437520 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5DFF9B8221FF73900437520 /* GoogleService-Info.plist */; };
 		B90AEEC808375644D035F25D /* libPods-WatchTogether.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4D1E9B703A574A488C1FE9 /* libPods-WatchTogether.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		A5374A8C21F1099000E666D4 /* WatchTogether-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchTogether-Bridging-Header.h"; sourceTree = "<group>"; };
 		A5374A8F21F10A3900E666D4 /* WTYTPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTYTPlayerView.swift; sourceTree = "<group>"; };
 		A5374A9121F10CFE00E666D4 /* UIViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUtils.swift; sourceTree = "<group>"; };
+		A5DFF9B8221FF73900437520 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9CF6177D7F6EBE2A073E382 /* Pods-WatchTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTogether.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTogether/Pods-WatchTogether.debug.xcconfig"; sourceTree = "<group>"; };
 		CB1E370504E21FDDEEF77184 /* libPods-WatchTogetherUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchTogetherUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE60440212BA026462123E9A /* Pods-WatchTogetherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTogetherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTogetherUITests/Pods-WatchTogetherUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				A5374A8C21F1099000E666D4 /* WatchTogether-Bridging-Header.h */,
 				A5374A8F21F10A3900E666D4 /* WTYTPlayerView.swift */,
 				A5374A9121F10CFE00E666D4 /* UIViewUtils.swift */,
+				A5DFF9B8221FF73900437520 /* GoogleService-Info.plist */,
 			);
 			path = WatchTogether;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5374A6921F0E96C00E666D4 /* LaunchScreen.storyboard in Resources */,
+				A5DFF9B9221FF73900437520 /* GoogleService-Info.plist in Resources */,
 				A5374A6621F0E96C00E666D4 /* Assets.xcassets in Resources */,
 				A5374A6421F0E96A00E666D4 /* Main.storyboard in Resources */,
 			);

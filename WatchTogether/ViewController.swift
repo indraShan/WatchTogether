@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
+  var ref: DatabaseReference!
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    ref = Database.database().reference()
 
     let ytPlayer = WTYTPlayerView(frame: CGRect.zero)
     ytPlayer.translatesAutoresizingMaskIntoConstraints = false
@@ -21,7 +24,20 @@ class ViewController: UIViewController {
     ytPlayer.alignTopWith(view)
     ytPlayer.heightEqualTo(view, multiplier: 0.4)
 
-    ytPlayer.playWithUrl("https://youtu.be/MhuFNKQpWes")
+    ytPlayer.load(withVideoId: "https://youtu.be/MhuFNKQpWes")
+
+    let playbackGroup = ref.childByAutoId().cre("MhuFNKQpWes")
+
+    _ = ref.observe(DataEventType.value, with: { (snapshot) in
+      let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+      print("Received change: \(postDict)");
+      if (postDict["command"] as? String == "play") {
+        ytPlayer.playVideo();
+      }
+      else if (postDict["command"] as? String == "pause") {
+        ytPlayer.pauseVideo();
+      }
+    })
   }
 
 

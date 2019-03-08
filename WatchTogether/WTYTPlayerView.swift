@@ -21,12 +21,27 @@ class WTYTPlayerView: UIView {
     ytPlayer = YTPlayerView(frame: .zero)
     super.init(frame: frame)
 
+    ytPlayer.delegate = self
     ytPlayer.translatesAutoresizingMaskIntoConstraints = false
     addSubview(ytPlayer)
     ytPlayer.matchSizeWith(self)
   }
 
-  func playWithUrl(_ url: String) {
+  func load(withVideoId videoId: String) {
     ytPlayer.load(withVideoId: "MhuFNKQpWes")
+  }
+
+  func playVideo() {
+    ytPlayer.playVideo()
+  }
+
+  func pauseVideo() {
+    ytPlayer.pauseVideo()
+  }
+}
+
+extension WTYTPlayerView : YTPlayerViewDelegate {
+  func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
+    
   }
 }
