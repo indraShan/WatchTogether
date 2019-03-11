@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		52986C857B6801066A8A97C9 /* libPods-WatchTogetherTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9879AE1A047F1EF9ACE97C /* libPods-WatchTogetherTests.a */; };
 		6A199B91610769D78DEAAF45 /* libPods-WatchTogetherUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1E370504E21FDDEEF77184 /* libPods-WatchTogetherUITests.a */; };
+		A5106BEA2236059D00DED48C /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5106BE92236059D00DED48C /* NavigationCoordinator.swift */; };
+		A5106BEC223605D700DED48C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5106BEB223605D700DED48C /* AppCoordinator.swift */; };
+		A5106BF422361BAE00DED48C /* YouTubePlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5106BF322361BAE00DED48C /* YouTubePlayerViewModel.swift */; };
+		A5106BF622362E5300DED48C /* PlayerViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5106BF522362E5300DED48C /* PlayerViewDataModel.swift */; };
 		A5374A5F21F0E96A00E666D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A5E21F0E96A00E666D4 /* AppDelegate.swift */; };
-		A5374A6121F0E96A00E666D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A6021F0E96A00E666D4 /* ViewController.swift */; };
-		A5374A6421F0E96A00E666D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5374A6221F0E96A00E666D4 /* Main.storyboard */; };
+		A5374A6121F0E96A00E666D4 /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A6021F0E96A00E666D4 /* PlaybackViewController.swift */; };
 		A5374A6621F0E96C00E666D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5374A6521F0E96C00E666D4 /* Assets.xcassets */; };
 		A5374A6921F0E96C00E666D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5374A6721F0E96C00E666D4 /* LaunchScreen.storyboard */; };
 		A5374A7421F0E96C00E666D4 /* WatchTogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A7321F0E96C00E666D4 /* WatchTogetherTests.swift */; };
 		A5374A7F21F0E96C00E666D4 /* WatchTogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A7E21F0E96C00E666D4 /* WatchTogetherUITests.swift */; };
-		A5374A9021F10A3900E666D4 /* WTYTPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A8F21F10A3900E666D4 /* WTYTPlayerView.swift */; };
-		A5374A9221F10CFE00E666D4 /* UIViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A9121F10CFE00E666D4 /* UIViewUtils.swift */; };
+		A5374A9021F10A3900E666D4 /* YouTubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374A8F21F10A3900E666D4 /* YouTubePlayerView.swift */; };
 		A5DFF9B9221FF73900437520 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5DFF9B8221FF73900437520 /* GoogleService-Info.plist */; };
 		B90AEEC808375644D035F25D /* libPods-WatchTogether.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4D1E9B703A574A488C1FE9 /* libPods-WatchTogether.a */; };
 /* End PBXBuildFile section */
@@ -44,10 +46,13 @@
 		1A4D1E9B703A574A488C1FE9 /* libPods-WatchTogether.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchTogether.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0DDB096070939C32DD2320 /* Pods-WatchTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTogether.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTogether/Pods-WatchTogether.release.xcconfig"; sourceTree = "<group>"; };
 		9C9879AE1A047F1EF9ACE97C /* libPods-WatchTogetherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchTogetherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5106BE92236059D00DED48C /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		A5106BEB223605D700DED48C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A5106BF322361BAE00DED48C /* YouTubePlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerViewModel.swift; sourceTree = "<group>"; };
+		A5106BF522362E5300DED48C /* PlayerViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewDataModel.swift; sourceTree = "<group>"; };
 		A5374A5B21F0E96A00E666D4 /* WatchTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5374A5E21F0E96A00E666D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5374A6021F0E96A00E666D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A5374A6321F0E96A00E666D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5374A6021F0E96A00E666D4 /* PlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
 		A5374A6521F0E96C00E666D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5374A6821F0E96C00E666D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5374A6A21F0E96C00E666D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +63,7 @@
 		A5374A7E21F0E96C00E666D4 /* WatchTogetherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTogetherUITests.swift; sourceTree = "<group>"; };
 		A5374A8021F0E96C00E666D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5374A8C21F1099000E666D4 /* WatchTogether-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchTogether-Bridging-Header.h"; sourceTree = "<group>"; };
-		A5374A8F21F10A3900E666D4 /* WTYTPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTYTPlayerView.swift; sourceTree = "<group>"; };
-		A5374A9121F10CFE00E666D4 /* UIViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewUtils.swift; sourceTree = "<group>"; };
+		A5374A8F21F10A3900E666D4 /* YouTubePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerView.swift; sourceTree = "<group>"; };
 		A5DFF9B8221FF73900437520 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9CF6177D7F6EBE2A073E382 /* Pods-WatchTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchTogether.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchTogether/Pods-WatchTogether.debug.xcconfig"; sourceTree = "<group>"; };
 		CB1E370504E21FDDEEF77184 /* libPods-WatchTogetherUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchTogetherUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +113,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A5106BED22360C5500DED48C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5374A6021F0E96A00E666D4 /* PlaybackViewController.swift */,
+				A5374A8F21F10A3900E666D4 /* YouTubePlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5106BEE22360C6200DED48C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A5106BF322361BAE00DED48C /* YouTubePlayerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A5106BEF22360C7A00DED48C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5106BF522362E5300DED48C /* PlayerViewDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5106BF22236126F00DED48C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A5106BE92236059D00DED48C /* NavigationCoordinator.swift */,
+				A5106BEB223605D700DED48C /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		A5374A5221F0E96900E666D4 = {
 			isa = PBXGroup;
 			children = (
@@ -134,15 +172,15 @@
 		A5374A5D21F0E96A00E666D4 /* WatchTogether */ = {
 			isa = PBXGroup;
 			children = (
+				A5106BF22236126F00DED48C /* Coordinators */,
+				A5106BEF22360C7A00DED48C /* Models */,
+				A5106BEE22360C6200DED48C /* ViewModels */,
+				A5106BED22360C5500DED48C /* Views */,
 				A5374A5E21F0E96A00E666D4 /* AppDelegate.swift */,
-				A5374A6021F0E96A00E666D4 /* ViewController.swift */,
-				A5374A6221F0E96A00E666D4 /* Main.storyboard */,
 				A5374A6521F0E96C00E666D4 /* Assets.xcassets */,
 				A5374A6721F0E96C00E666D4 /* LaunchScreen.storyboard */,
 				A5374A6A21F0E96C00E666D4 /* Info.plist */,
 				A5374A8C21F1099000E666D4 /* WatchTogether-Bridging-Header.h */,
-				A5374A8F21F10A3900E666D4 /* WTYTPlayerView.swift */,
-				A5374A9121F10CFE00E666D4 /* UIViewUtils.swift */,
 				A5DFF9B8221FF73900437520 /* GoogleService-Info.plist */,
 			);
 			path = WatchTogether;
@@ -288,7 +326,6 @@
 				A5374A6921F0E96C00E666D4 /* LaunchScreen.storyboard in Resources */,
 				A5DFF9B9221FF73900437520 /* GoogleService-Info.plist in Resources */,
 				A5374A6621F0E96C00E666D4 /* Assets.xcassets in Resources */,
-				A5374A6421F0E96A00E666D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,10 +441,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5374A6121F0E96A00E666D4 /* ViewController.swift in Sources */,
+				A5106BEC223605D700DED48C /* AppCoordinator.swift in Sources */,
+				A5374A6121F0E96A00E666D4 /* PlaybackViewController.swift in Sources */,
 				A5374A5F21F0E96A00E666D4 /* AppDelegate.swift in Sources */,
-				A5374A9221F10CFE00E666D4 /* UIViewUtils.swift in Sources */,
-				A5374A9021F10A3900E666D4 /* WTYTPlayerView.swift in Sources */,
+				A5106BF422361BAE00DED48C /* YouTubePlayerViewModel.swift in Sources */,
+				A5106BEA2236059D00DED48C /* NavigationCoordinator.swift in Sources */,
+				A5106BF622362E5300DED48C /* PlayerViewDataModel.swift in Sources */,
+				A5374A9021F10A3900E666D4 /* YouTubePlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,14 +483,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A5374A6221F0E96A00E666D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5374A6321F0E96A00E666D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A5374A6721F0E96C00E666D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -587,7 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSP65KJN65;
 				INFOPLIST_FILE = WatchTogether/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -610,7 +642,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSP65KJN65;
 				INFOPLIST_FILE = WatchTogether/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

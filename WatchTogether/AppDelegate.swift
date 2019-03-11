@@ -11,14 +11,18 @@ import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-  var window: UIWindow?
-
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  
+  var coordinator: AppCoordinator!
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     FirebaseApp.configure()
+    let window = UIWindow(frame: UIScreen.main.bounds)
+    coordinator = AppCoordinator(window)
+    coordinator.start()
+    window.makeKeyAndVisible()
     return true
   }
-
-
+  
+  
 }
 
