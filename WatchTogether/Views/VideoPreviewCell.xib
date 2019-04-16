@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoPreviewCell" id="gTV-IL-0wX" customClass="VideoPreviewCell" customModule="WatchTogether" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="292"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="292"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-vT-5ED" userLabel="Preview image">
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="222"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="YzO-vT-5ED" secondAttribute="height" multiplier="1.72" id="V4l-Du-3dt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Really long text that can fit in two lines but could overflow a bit too, but this still a bit too short" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xm-A8-RJc" userLabel="Title label">
+                        <rect key="frame" x="60" y="227" width="317" height="39"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y4L-97-Xa3" userLabel="Channel preview">
+                        <rect key="frame" x="5" y="227" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="M8X-v2-k4j"/>
+                            <constraint firstAttribute="width" secondItem="Y4L-97-Xa3" secondAttribute="height" multiplier="1:1" id="wua-ja-PQD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text can only be long enough to fit in one line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ku-NU-zyc" userLabel="Detail label">
+                        <rect key="frame" x="60" y="268" width="317" height="14.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9ku-NU-zyc" firstAttribute="trailing" secondItem="4Xm-A8-RJc" secondAttribute="trailing" id="4iZ-GN-kS5"/>
+                <constraint firstItem="4Xm-A8-RJc" firstAttribute="leading" secondItem="Y4L-97-Xa3" secondAttribute="trailing" constant="5" id="8fh-Xr-0xF"/>
+                <constraint firstItem="9ku-NU-zyc" firstAttribute="top" secondItem="4Xm-A8-RJc" secondAttribute="bottom" constant="2" id="GaG-h5-Uhl"/>
+                <constraint firstAttribute="trailing" secondItem="YzO-vT-5ED" secondAttribute="trailing" id="IKc-TP-1Z8"/>
+                <constraint firstItem="Y4L-97-Xa3" firstAttribute="top" secondItem="YzO-vT-5ED" secondAttribute="bottom" constant="5" id="Jhs-hL-jIj"/>
+                <constraint firstItem="Y4L-97-Xa3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="RSf-Kh-tzq"/>
+                <constraint firstItem="4Xm-A8-RJc" firstAttribute="top" secondItem="Y4L-97-Xa3" secondAttribute="top" id="Reu-DO-zdM"/>
+                <constraint firstItem="9ku-NU-zyc" firstAttribute="leading" secondItem="4Xm-A8-RJc" secondAttribute="leading" id="aV3-st-dOp"/>
+                <constraint firstAttribute="trailing" secondItem="4Xm-A8-RJc" secondAttribute="trailing" constant="5" id="c3j-ea-s2O"/>
+                <constraint firstItem="YzO-vT-5ED" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vhi-44-Hn9"/>
+                <constraint firstItem="YzO-vT-5ED" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wQP-O0-gee"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="382" height="292"/>
+            <connections>
+                <outlet property="channelPreviewImage" destination="Y4L-97-Xa3" id="k6W-Ez-DQy"/>
+                <outlet property="channelPreviewLeadingConstraint" destination="RSf-Kh-tzq" id="I57-WY-GEv"/>
+                <outlet property="channelPreviewWidthConstraint" destination="M8X-v2-k4j" id="Oto-Po-8ku"/>
+                <outlet property="channelTopConstraint" destination="Jhs-hL-jIj" id="M2I-E4-PN9"/>
+                <outlet property="detailLabel" destination="9ku-NU-zyc" id="IAy-ex-CHd"/>
+                <outlet property="detailTopConstraint" destination="GaG-h5-Uhl" id="u5t-Uw-Njx"/>
+                <outlet property="imageAspectRatioConstraint" destination="V4l-Du-3dt" id="BGK-tE-ekh"/>
+                <outlet property="previewImage" destination="YzO-vT-5ED" id="089-Lf-rlH"/>
+                <outlet property="titleLabel" destination="4Xm-A8-RJc" id="R8z-kZ-AMo"/>
+                <outlet property="titleLabelLeadingConstraint" destination="8fh-Xr-0xF" id="lbG-IT-O7a"/>
+                <outlet property="titleLabelTrailingConstraint" destination="c3j-ea-s2O" id="Ubo-ZO-qqF"/>
+            </connections>
+            <point key="canvasLocation" x="-958.39999999999998" y="87.256371814092958"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -13,9 +13,10 @@ struct AppCoordinator : NavigationCoordinator {
     init(_ window: UIWindow) {
         self.window = window
     }
+    
     func start() {
-      let playbackController = PlaybackViewController()
-      let navController = UINavigationController(rootViewController: playbackController)
+      let homeVC = HomeViewController()
+      let navController = UINavigationController(rootViewController: homeVC)
       window.rootViewController = navController;
     }
 }

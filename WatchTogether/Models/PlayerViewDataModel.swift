@@ -24,9 +24,9 @@ class PlayerViewDataModel : PlayerViewDataModelProtocol {
   init() {
     databaseReference = Database.database().reference()
     
-//    let groups = databaseReference.child("groups")
-//    let firstGroup = groups.child("-L_eZQk35CQP-C-mf5Ni")
-//    
+    let groups = databaseReference.child("groups")
+    let firstGroup = groups.child("-L_eZQk35CQP-C-mf5Ni")
+//
 //    let videoInfo = firstGroup.child("video")
 //    videoInfo.setValue("MhuFNKQpWes")
 //
